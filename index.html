@@ -1,18 +1,111 @@
-<!DOCTYPE HTML >
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
 
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <title>Betting Game</title>
-</head>
+    <title>The House Always Wins</title>
 
-<body>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+    <link href="application.css" rel="stylesheet">
+  </head>
 
-<p id="dialog">This is my web page</p>
-<script src="http://code.jquery.com/jquery-latest.min.js"type="text/javascript"></script>
-<script src="game.js"></script>
-</body>
+  <body>
 
+    <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">The House Always Wins</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li id="start2"><a>Start</a></li>
+                  
+                  <li id="restart"><a>Restart</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="inner cover" id="welcome">
+            <h1 class="cover-heading">Are you ready to strike it rich?</h1>
+            <p class="lead">The game is simple. Choose your wager, choose your number, and take a spin with destiny.</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default" id="start">Lets Play</a>
+            </p>
+          </div>
+
+          <div class="inner cover" id="playing">
+            <h1 class="cover-heading">Lets Play</h1>
+                <form>
+    
+                    <div class="form-group">
+
+                      <div class="row">
+
+                        <div class="col-xs-6">
+              
+                          <select id="wager" class="form-control special">
+                            <option>Your Wager</option>
+                            <option value="1">$1</option>
+                            <option value="2">$2</option>
+                            <option value="3">$3</option>
+                            <option value="4">$4</option>
+                            <option value="5">$5</option>
+                            <option value="6">$6</option>
+                            <option value="7">$7</option>
+                            <option value="8">$8</option>
+                            <option value="9">$9</option>
+                            <option value="1">$10</option>
+                          </select>
+                        </div>
+                        <div class="col-xs-6">
+              
+                          <select id="guess" class="form-control special">
+                            <option>Your Guess</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                          </select>
+                        </div>
+                      </div>
+
+                    </div>
+                    
+                    <button id="play" class="btn btn-lg btn-default play_session">I'm Ready - Play!</button>
+                </form>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+ 
+    <script src="http://code.jquery.com/jquery-latest.min.js"type="text/javascript"></script>
+    <script src="game.js"></script>
+    <script src="application.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  </body>
 </html>
-
-
